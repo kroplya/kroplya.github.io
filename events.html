@@ -1,0 +1,1067 @@
+<!DOCTYPE html> <!-- template for BOOTSTRAP 4 from www.getbootstrap.com-->
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Greater Region</title>
+    <link rel="stylesheet" type="text/css" href="css/resetcss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- for fixing navbar top fixed overlapping -->
+    <script>
+        $(document).ready(function () {
+            $(document.body).css('padding-top', $('#topnavbar').height() + 10);
+            $(window).resize(function () {
+                $(document.body).css('padding-top', $('#topnavbar').height() + 10);
+            });
+        });
+
+    </script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="sticky-footer-navbar.css" rel="stylesheet">  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'>
+    <link rel="stylesheet" type="text/css" href="css/grandeRegionEv.css">
+
+</head>
+
+<body class="d-flex flex-column h-100"> 
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="topnavbar" style="background-color: #335557">
+            <!--id=topnavbar for fixing navbar top fixed overlapping -->
+            <div class="navbar-brand mb-0 h1" style="color: #2cc446; font-variant: small-caps">
+                <!-- for a link <a> class="navbar-brand" href="#"></a>-->
+                <div class="d-inline-block align-top">Grande Region</div>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Welcome
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="events.html">Events <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hiking.html">Hiking </a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="flex-shrink-0" style="margin-top: -4px;">
+        <div class="d-none d-md-block d-print-none">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="false"
+                style="background-color:#d0ca89">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid w-100" src="images/luxembourg.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block" style="bottom:0;">
+                            <h1 class="carheader">You will love Luxembourg!</h1>
+                            <p class="cartext">
+                                Either you explore the Mullerthal trails or visit a
+                                city for enjoying on of the various events, adventure lovers have a lot of fun!</p>
+                            <p><a class="btn btn-lg btn-primary button" href="https://www.eventsinluxembourg.lu/en"
+                                    target="_blank" role="button">read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid w-100" src="images/france.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block" style="bottom:0;">
+                            <h1 class="carheader">Visit Lorraine region of France!</h1>
+                            <p class="cartext">History admireres are to visit the Maginot line, while culture lovers
+                                will enjoy numerous festivals and traditional local events.</p>
+                            <p><a class="btn btn-lg btn-primary button"
+                                    href="https://www.tourism-lorraine.com/see-do/events/" target="_blank"
+                                    role="button">read more</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid w-100" src="images/belgium.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block" style="bottom:0;">
+                            <h1 class="carheader">Discover Belgium's Wallonia region!</h1>
+                            <p class="cartext">Festival funs, you gonna love it! And in your spare time don't forget to
+                                visit beautiful castles and try the famous belgian beer.</p>
+                            <p><a class="btn btn-lg btn-primary button"
+                                    href="http://walloniabelgiumtourism.co.uk/en-gb/3/see-do/events-calendar"
+                                    target="_blank" role="button">read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid w-100" src="images/germany.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block" style="bottom:0;">
+                            <h1 class="carheader">Visit German's Saarland and Rhineland-Palatinate!</h1>
+                            <p class="cartext">Hike for the most stunning views. Festivals, local fests, kids events -
+                                you will have no time to be bored.</p>
+                            <p><a class="btn btn-lg btn-primary button"
+                                    href="https://www.romantic-germany.info/holiday-regions/palatinate/event-highlights/#accordion"
+                                    target="_blank" role="button">read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container d-none d-print-inline">
+            <h2 class="mt-5" style="text-align: center"><strong>Various events in Luxembourg, Lorraine, Wallonia,
+                    Saarland and Rhineland-Palatinate</strong></h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row d-print-block">
+                <div class="col-md-4 d-none d-md-block d-print-none">
+                    <aside class="left">
+
+                        <div class="calendar">
+                            <div class="header">
+                                <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+                                <div class="text" data-render="month-year"></div>
+                                <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+                            </div>
+                            <div class="months" data-flow="left">
+                                <div class="month month-a">
+                                    <div class="render render-a"></div>
+                                </div>
+                                <div class="month month-b">
+                                    <div class="render render-b"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
+                <div class="col-md-8 d-print-inline">
+                    <section class="right-text-ev">
+                        <div class="d-none d-print-inline">
+                            <h2 style="text-align: center">Major events in Luxembourg</h2>
+                            <br>
+                            <h4>Carnival Parades at Diekirch, Esch-sur-Alzette, Pétange and Remich: March</h4>
+                            <p>Great carnival cavalcades through the streets of the towns. The cavalcade of Pétange is
+                                the
+                                oldest and largest carnival parade in the country. Vibrant,
+                                diverse and internationally oriented, it has long since gained recognition and remains
+                                year
+                                after year a great public success.</p>
+                            <h4>Luxembourg Museum Days: 18 May to 19 May 2019</h4>
+                            <p>Luxembourg is rich in numerous museums, reflections of its history, its culture and its
+                                natural diversity. On the occasion of Luxembourg Museum Days, discover the Luxembourg
+                                heritage’s riches.<br>
+                                Created in 1997, this cultural event offers the possibility of visiting museums in
+                                Luxembourg free of charge to discover the diversity of its offer and especially immerse
+                                yourself in the Luxembourg culture through its history, its art, its geography…<br>
+                                About forty museums participate in this event and offer a complete and varied cultural
+                                programme intended for everyone. Don’t miss the numerous guided tours available, the
+                                conferences or the workshops organised by the different museums in Luxembourgish,
+                                French,
+                                German or English.</p>
+                            <h4>ING Night Marathon Luxembourg: 1 June 2019</h4>
+                            <p>At dusk, in the narrow streets and alleys of the old town, never-ending rows of
+                                spectators
+                                standing on both sides of the course, absolute pandemonium at Place Guillaume II, the
+                                quiet
+                                green parks in the city centre, small festivals in the exclusive residential areas.
+                                Decide
+                                on the day whether to run the marathon or half marathon!</p>
+                            <h4>National Day: 23 June</h4>
+                            <p>National Day in Luxembourg was originally meant to celebrate the Grand-Dukes birthday,
+                                which
+                                started once with the birthday of Grand Duchess Charlotte, which is on January 23rd. As
+                                the
+                                date of her birthday was in winter, the celebrations were postponed to a later date, on
+                                June
+                                23rd. The date remained unchanged even after her reign.<br>
+                                The festivities all over the Grand-Duchy start on the eve of National day, June 22nd.
+                                Luxembourg City starts the celebrations with a solemn changing of the guard at the
+                                Grand-Ducal palace around 4:00 pm.<br>
+                                In the evening a torchlight procession takes place throughout the capital city. The
+                                public
+                                areas and the narrow streets of Luxembourg transform into a huge open-air party with
+                                free
+                                concerts, DJ's and dance floors all over the city. It is the moment to try some local
+                                specialties such as sausages, potato fritters, Luxembourgish beer or wine ...
+                                Later at night, fireworks will be launched from the Adolphe bridge.<br>
+                                On National Day (23/06), the day starts with an official ceremony, followed by a gun
+                                salute
+                                and a military parade in the district Kirchberg. The traditional Te Deum in the
+                                afternoon
+                                takes place at the cathedral Notre-Dame.</p>
+                            <h4> Agricultural Fair in Ettelbruck: 5 July to 7 July 2019</h4>
+                            <p>The agricultural fair “Foire Agricole” in Ettelbruck, organized by the city itself, has
+                                been
+                                for many years the showcase of the Luxembourgish farming industry. It’s the place to be
+                                for
+                                all kinds of professions from the green sector (farming, forestry, landscapes,..), trade
+                                and
+                                agricultural research. Particular emphasis is placed on the presentation of local
+                                products
+                                and the consumer awareness to explore regional products.</p>
+
+                            <h4> The Schueberfouer in Luxembourg City: 23 August- 11 September 2019</h4>
+                                <p>The Schueberfouer is the largest funfair in Luxembourg and the Greater Region. From
+                                    late
+                                    August to early September, visitors flock to the fairground at Champ du Glacis to
+                                    experience
+                                    the magical atmosphere of the Luxembourg City fun fair, which covers a whopping 4
+                                    hectares
+                                    in the heart of the city. The Schueberfouer is also a hotbed of popular and
+                                    innovative
+                                    gastronomy. Visitors come to eat delicious Gromperekichelcher: the famous
+                                    quintessentially
+                                    Luxembourgish potato pancakes. The City of Luxembourg, which organises the
+                                    Schueberfouer
+                                    each year, is proud to offer visitors and locals alike a wonderful mix of tradition,
+                                    gastronomy and thrills – there's nothing quite like it anywhere else in Europe.</p>
+                                <h4>Hunnefeier Wine Festival in Schengen: 20 October 2019</h4>
+                                <p>Schengen celebrates the "Hunnefeier", the end of this year's grape harvest.<br>
+                                    Visitors will arrive from all over the Greater Region, limitless to Schengen.<br>
+                                    The "Syndicat d'Initiative Schengen", local clubs, wineries and volunteers, put
+                                    together
+                                    a colorful family program. At many stands, you have the opportunity to let patronize
+                                    the
+                                    fine wines of our winery. Flea and craft market with more than 100 stands.
+                                    International
+                                    street artists, exhibtion of historic tractors, muscial entertainment, pony riding
+                                    and
+                                    carousel. Local and regional cuisine, tasting of wines and Crémants and the "
+                                    Fiederwäissen " made by winemakers from the municipality Schengen.</p>
+                                <h4> Christmas Markets: 23 November to 24 December 2019</h4>
+                                <p>Christmas Markets are held all over the country, but the most popular take place at
+                                    Place d'Armes, Place de la Constitution, Place de Paris in Luxembourg city. There
+                                    are markets in Esch-sur-Alzette, Differdange, Dudelange, Mersch, Vianden and other
+                                    towns.</p>
+                                <p>You can find out more if you visit <a href="https://www.eventsinluxembourg.lu/en"
+                                        target="_blank"> www.eventsinluxembourg.lu</a> and <a
+                                        href="https://www.luxembourg-city.com/en/what-s-on" target="_blank">
+                                        www.luxembourg-city.com </a>.</p>
+                                <br>
+
+                                <h2 style="text-align: center">Major events in Lorraine</h2>
+                                <br>
+                                <h4>European Artistic Crafts Days in Metz: April</h4>
+                                <p>A major event for the promotion and development of the artistic crafts in France and
+                                    Europe: workshops, training centres and schools open to the public, events,
+                                    participation of many heritage and creative sites, themed tours and more… Come and
+                                    discover the high quality of our local craftsmanship.</p>
+                                <h4>Mirabelle Plum Festival in Metz: 15 August</h4>
+                                <p>The Mirabelle Plum Festival has attracted thousands of visitors to the capital of the
+                                    Lorraine region every year since 1947, and rounds off Metz en Fête's programme of
+                                    summer
+                                    events. These celebrations usually take place after August 15 and come in the form
+                                    of
+                                    street entertainment, concerts, balls, a mirabelle plum market, crafts market,
+                                    pyrotechnic display, parade and the election of Miss Mirabelle.</p>
+                                <h4>The Montgolfiades in Metz: from late August to early September </h4>
+                                <p>Over the years, the Montgolfiades de Metz has become one of the most popular aerostat
+                                    events.
+                                    This big gathering of aerostats, an unmissable event in late summer, is attended by
+                                    over
+                                    10 000 enthusiasts every year.
+                                    The Metz balloon (launched on 21 August 2001) floats around the sky all over Europe
+                                    and
+                                    promotes the colours of the city of Metz, which was the birthplace of Pilâtre de
+                                    Rozier,
+                                    the world's first aerostat pilot.</p>
+                                <h4>Nancy International Film Festival in Nancy: September</h4>
+                                <p>The festival, which is organised by a team of devoted volunteers, has taken place for
+                                    over 20 years and today has an excellent reputation. It is one of the major events
+                                    in
+                                    September in Nancy.<br>
+                                    Film directors from all around the world submit their films in the hope of being
+                                    selected for the international short film competition or the documentary films
+                                    competition. Films are selected based on the values of tolerance and multicultural
+                                    dialogue. Sometimes militant, sometimes funny, unexpected or moving, the selected
+                                    films
+                                    always manage to surprise audiences. The festival is the opportunity to discover or
+                                    rediscover films that are rarely shown in France. Young audiences aren’t neglected
+                                    and
+                                    can enjoy their own special programme. <br>In addition to its extremely diverse and
+                                    high
+                                    quality programme, the festival also
+                                    features guest appearances and gatherings with attending actors and directors, or
+                                    with
+                                    the festival volunteers in the Manufacture courtyard where drinks parties, outdoor
+                                    screenings and concerts and held.</p>
+                                <h4>The Nancy Jazz Pulsation Fest in Nancy: October</h4>
+                                <p>For ten or so days, it’s non-stop concerts throughout the Nancy area. There’s jazz of
+                                    course, but not only! This festival is also tuned into all the major modern musical
+                                    movements: blues, rock, chanson française, electro, reggae, hip-hop and world music.
+                                    Both internationally famous headline acts and many new acts await you. <br>The
+                                    festival
+                                    promises you some exceptional evenings, as well as easy-going events such
+                                    as Nancy Jazz Poursuite or Pépinière en fête (an afternoon of free concerts for all
+                                    the
+                                    family).</p>
+                                <h4> Christmas Markets: late November to late December 2019</h4>
+                                <p>Every town in the region has its own market, but the biggest are those in Metz,
+                                    Nancy,
+                                    Plombieres-les-Bains and Epinal. While
+                                    the holiday season is approaching and the Christmas Market is in full swing at
+                                    various
+                                    sites and neighbourhoods of the city, it is traditional for the good Saint Nicholas
+                                    to
+                                    pay a visit in early December and reward good children with sweets and candies,
+                                    while
+                                    the Bogeyman figure of Père Fouettard takes care of the less well-behaved...
+                                    Shops and businesses are generally open on the three Sundays before Christmas, so
+                                    you
+                                    can enjoy city breaks in the spice-scented air until the last few days before
+                                    Christmas
+                                    Day.
+                                    A Ferris wheel, ice skating and other winter games offer a variety of entertainment
+                                    for
+                                    all ages.</p>
+                                <p>You can find out more if you visit <a
+                                        href="https://www.tourism-lorraine.com/see-do/events/" target="_blank">
+                                        www.tourism-lorraine.com</a> and <a
+                                        href="https://www.lorraineaucoeur.com/modules/compte/evenements.php"
+                                        target="_blank">
+                                        www.lorraineaucoeur.com </a>.</p>
+                                <br>
+
+                                <h2 style="text-align: center">Major events in Wallonia</h2>
+                                <br>
+                                <h4>The Dour Festival</h4>
+                                <p>For the first edition back in 1989, a mere five bands performed here, while today
+                                    over a
+                                    quarter of a million festival-goers arrive to listen to 200 bands performing at 6
+                                    different stages. Not quite Glastonbury, but the same spirit, with acts like Mark
+                                    Ronson, De La Soul, Snoop Dogg and Damon Albarn. It offers you an eclectic list of
+                                    artists - stars, gems,
+                                    up and rising musicians and singers, traditional ones. From rap to drum N bass,
+                                    electro
+                                    to reggae and hip-hop, there will be something for everyone.
+
+                                </p>
+                                <h4>"Les Fetes de Wallonie" (The Wallonia Festivals) in Namur: September</h4>
+                                <p>‘Les Fetes de Wallonie’ (The Wallonia Festivals) celebrate Belgian independence,
+                                    patriotism and Walloon identity, commemorating the famous revolutionary days of
+                                    September 1830 when the country was officially formed. <br> Although marked across
+                                    southern Belgium, the biggest celebrations are in Wallonia’s
+                                    capital city, Namur, where as many as 250,000 people descend for the festivities
+                                    every
+                                    year.<br>
+                                    Highlights include the ‘Combat de l’Echasse d’Or’, or the ‘Fight for the Golden
+                                    Stilt’,
+                                    on Place St. Aubain. During this ancient and near-sacred bout, two groups of
+                                    stilt-wearing contestants stand in opposing lines, then move into battle to the
+                                    sound of
+                                    drums. The aim is to make their direct opponent fall using only their elbows or
+                                    stilts,
+                                    with the last man standing hailed the champion. Needless to say, strong beer
+                                    follows.
+                                </p>
+                                <h4>Christmas Markets in Liège, Namur, Arlon and other towns: December </h4>
+                                <p>the Christmas market in Liège is the oldest and the biggest one in Belgium. And it’s
+                                    not
+                                    just a simple Christmas market, it’s a whole Christmas Village, with its very own
+                                    Post
+                                    Office and post stamps! This year there will be even a small train that will connect
+                                    the
+                                    various attractions in the Christmas Village. The traditional skating rink, the
+                                    Ferris
+                                    wheel and the toboggan run aren’t missing, as well. If you want to buy a unique
+                                    souvenir, than you should look for the hand blown glass decorations. Of course, when
+                                    in
+                                    Liège, you have to try the famous Liège waffles, which are not to be mixed with the
+                                    Brussels waffles. </p>
+                                <p> To Find more visit <a
+                                        href="http://walloniabelgiumtourism.co.uk/en-gb/3/see-do/events-calendar"
+                                        target="_blank">
+                                        www.walloniabelgiumtourism.co.uk</a>.</p>
+                                <br>
+
+                                <h2 style="text-align: center">Major events in Saarland and Rhineland-Palatinate </h2>
+                                <br>
+                                <h4>Brezelfest in Speyer: from 11 to 16 July 2019</h4>
+                                <p>The biggest public festival on the upper Rhine is an absolute must for residents of
+                                    Speyer and their guests. For six days, there is turmoil on the fairgrounds beneath
+                                    the
+                                    cathedral. Every Sunday at the pretzel party - at 1:30pm - a colored pageant waltzes
+                                    through the streets of the cathedral city.</p>
+                                <h4>Saar Spectacle in Saarbücken: from 2 to 4 August 2019</h4>
+                                <p>Sun, sand and ... Saar. Every year over 300,000 visitors come to Saarbrücken and are
+                                    fascinated by the biggest water and water sports happening. The Saar Spectacle in
+                                    Saarbrücken is a unique event that you won’t find anywhere else in Germany,
+                                    revolving
+                                    all around the river Saar, water and water sports.Each year, the programme features
+                                    a
+                                    varied programme including lots of live music plus
+                                    different highlights, such as dragon boat and motorboat races, stand up paddle
+                                    boarding
+                                    and a flyboard show. </p>
+                                <h4>International festival of Magic in St. Wendel: from 2 to 4 August 2019</h4>
+                                <p>Top street magicians from around the world each year gather in St. Wendel to find out
+                                    who’s the best. The competition takes place in different locations in the town’s
+                                    pedestrianised centre, with each participant putting on a 20-minutes show. The award
+                                    ceremony is part of an open-air gala of magic on the castle square on Saturday night
+                                    from 8 pm onwards. This is followed by a big family festival of magic on Sunday.</p>
+                                <h4>The Wurstmarkt in Bad Dürkheim: from 6 to 10 September 2019</h4>
+                                <p>It's one of the largest, most traditional and entertaining public festivals in
+                                    Germany.
+                                    It is over 570 years old, and still as young as ever - the Dürkheim festival of
+                                    festivals - the main event of the year in the Pfalz.<br>
+                                    The entertainment along with the wine is one of the distinctive features of the
+                                    festival. You can enjoy over 150 different wines in over 50 different places - from
+                                    the
+                                    mellow Riesling to the finest ice-wine.<br>
+                                    Drinking without having to worry about alcohol limits - every driver's dream! No
+                                    problem
+                                    at the Dürkheimer Wurstmarkt. the greatest wine festival in the world is in the
+                                    heart of
+                                    the Pfalz and is easy to get to by bus or rail from any direction - right round the
+                                    clock!
+                                </p>
+                                <h4> Christmas Markets in Saarbrücken, Speyer, Hauenstein : December</h4>
+                                <p>Throughout Advent the St. Johanner market square in Saarbrücken is decorated for the
+                                    festive season. All
+                                    sorts of seasonal items and festive events put visitors in a jolly mood. </p>
+                                <p>Go to <a href="http://www.saarbruecken.de/en/tourism/event_highlights"
+                                        target="_blank">
+                                        www.saarbruecken.de</a>, <a
+                                        href="https://www.visitsaarland.co.uk/travel-guide/Veranstaltungskalender2"
+                                        target="_blank">
+                                        www.visitsaarland.co.uk </a> and <a
+                                        href="https://www.romantic-germany.info/holiday-regions/palatinate/event-highlights/#accordion"
+                                        target="_blank">www.romantic-germany.info</a> for find the details and more.</p>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div id="accordion" class="shadow p-0 mb-5 bg-white rounded d-print-none">
+                                <div class="card card-lux">
+                                    <div class="card-header d-flex justify-content-center" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button id="btnLux" class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Major events in Luxembourg
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <details>
+                                                <summary>
+                                                    <b>Carnival Parades</b> at Diekirch, Esch-sur-Alzette, Pétange and
+                                                    Remich: March
+                                                </summary>
+                                                <p>Great carnival cavalcades through the streets of the towns. The
+                                                    cavalcade of Pétange is
+                                                    the
+                                                    oldest and largest carnival parade in the country. Vibrant,
+                                                    diverse and internationally oriented, it has long since gained
+                                                    recognition and remains
+                                                    year
+                                                    after year a great public success.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Luxembourg Museum Days</b>: 18 May to 19 May 2019
+                                                </summary>
+                                                <p>Luxembourg is rich in numerous museums, reflections of its history,
+                                                    its culture and its
+                                                    natural diversity. On the occasion of Luxembourg Museum Days,
+                                                    discover the Luxembourg
+                                                    heritage’s riches.<br>
+                                                    Created in 1997, this cultural event offers the possibility of
+                                                    visiting museums in
+                                                    Luxembourg free of charge to discover the diversity of its offer and
+                                                    especially immerse
+                                                    yourself in the Luxembourg culture through its history, its art, its
+                                                    geography…<br>
+                                                    About forty museums participate in this event and offer a complete
+                                                    and varied cultural
+                                                    programme intended for everyone. Don’t miss the numerous guided
+                                                    tours available, the
+                                                    conferences or the workshops organised by the different museums in
+                                                    Luxembourgish,
+                                                    French,
+                                                    German or English.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>ING Night Marathon Luxembourg</b>: 1 June 2019
+                                                </summary>
+                                                <p>At dusk, in the narrow streets and alleys of the old town,
+                                                    never-ending rows of
+                                                    spectators
+                                                    standing on both sides of the course, absolute pandemonium at Place
+                                                    Guillaume II, the
+                                                    quiet
+                                                    green parks in the city centre, small festivals in the exclusive
+                                                    residential areas.
+                                                    Decide
+                                                    on the day whether to run the marathon or half marathon!</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>National Day</b>: 23 June
+                                                </summary>
+                                                <p>National Day in Luxembourg was originally meant to celebrate the
+                                                    Grand-Dukes birthday,
+                                                    which
+                                                    started once with the birthday of Grand Duchess Charlotte, which is
+                                                    on January 23rd. As
+                                                    the
+                                                    date of her birthday was in winter, the celebrations were postponed
+                                                    to a later date, on
+                                                    June
+                                                    23rd. The date remained unchanged even after her reign.<br>
+                                                    The festivities all over the Grand-Duchy start on the eve of
+                                                    National day, June 22nd.
+                                                    Luxembourg City starts the celebrations with a solemn changing of
+                                                    the guard at the
+                                                    Grand-Ducal palace around 4:00 pm.<br>
+                                                    In the evening a torchlight procession takes place throughout the
+                                                    capital city. The
+                                                    public
+                                                    areas and the narrow streets of Luxembourg transform into a huge
+                                                    open-air party with
+                                                    free
+                                                    concerts, DJ's and dance floors all over the city. It is the moment
+                                                    to try some local
+                                                    specialties such as sausages, potato fritters, Luxembourgish beer or
+                                                    wine ...
+                                                    Later at night, fireworks will be launched from the Adolphe
+                                                    bridge.<br>
+                                                    On National Day (23/06), the day starts with an official ceremony,
+                                                    followed by a gun
+                                                    salute
+                                                    and a military parade in the district Kirchberg. The traditional Te
+                                                    Deum in the
+                                                    afternoon
+                                                    takes place at the cathedral Notre-Dame.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Agricultural Fair</b> in Ettelbruck: 5 July to 7 July 2019
+                                                </summary>
+                                                <p>The agricultural fair “Foire Agricole” in Ettelbruck, organized by
+                                                    the city itself, has
+                                                    been
+                                                    for many years the showcase of the Luxembourgish farming industry.
+                                                    It’s the place to be
+                                                    for
+                                                    all kinds of professions from the green sector (farming, forestry,
+                                                    landscapes,..), trade
+                                                    and
+                                                    agricultural research. Particular emphasis is placed on the
+                                                    presentation of local
+                                                    products
+                                                    and the consumer awareness to explore regional products.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>The Schueberfouer</b> in Luxembourg City: 23 August- 11 September
+                                                    2019
+                                                </summary>
+                                                <p>The Schueberfouer is the largest funfair in Luxembourg and the
+                                                    Greater Region. From
+                                                    late
+                                                    August to early September, visitors flock to the fairground at Champ
+                                                    du Glacis to
+                                                    experience
+                                                    the magical atmosphere of the Luxembourg City fun fair, which covers
+                                                    a whopping 4
+                                                    hectares
+                                                    in the heart of the city. The Schueberfouer is also a hotbed of
+                                                    popular and
+                                                    innovative
+                                                    gastronomy. Visitors come to eat delicious Gromperekichelcher: the
+                                                    famous
+                                                    quintessentially
+                                                    Luxembourgish potato pancakes. The City of Luxembourg, which
+                                                    organises the
+                                                    Schueberfouer
+                                                    each year, is proud to offer visitors and locals alike a wonderful
+                                                    mix of tradition,
+                                                    gastronomy and thrills – there's nothing quite like it anywhere else
+                                                    in Europe.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Hunnefeier Wine Festival</b> in Schengen: 20 October 2019
+                                                </summary>
+                                                <p>Schengen celebrates the "Hunnefeier", the end of this year's grape
+                                                    harvest.<br>
+                                                    Visitors will arrive from all over the Greater Region, limitless to
+                                                    Schengen.<br>
+                                                    The "Syndicat d'Initiative Schengen", local clubs, wineries and
+                                                    volunteers, put
+                                                    together
+                                                    a colorful family program. At many stands, you have the opportunity
+                                                    to let patronize
+                                                    the
+                                                    fine wines of our winery. Flea and craft market with more than 100
+                                                    stands.
+                                                    International
+                                                    street artists, exhibtion of historic tractors, muscial
+                                                    entertainment, pony riding
+                                                    and
+                                                    carousel. Local and regional cuisine, tasting of wines and Crémants
+                                                    and the "
+                                                    Fiederwäissen " made by winemakers from the municipality Schengen.
+                                                </p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Christmas Markets</b>: 23 November to 24 December 2019
+                                                </summary>
+                                                <p>Christmas Markets are held all over the country, but the most popular
+                                                    take place at
+                                                    Place d'Armes, Place de la Constitution, Place de Paris in
+                                                    Luxembourg city. There
+                                                    are markets in Esch-sur-Alzette, Differdange, Dudelange, Mersch,
+                                                    Vianden and other
+                                                    towns.</p>
+                                            </details>
+                                            <br>
+                                            <p>You can find out more if you visit <a
+                                                    href="https://www.eventsinluxembourg.lu/en" target="_blank">
+                                                    www.eventsinluxembourg.lu</a> and <a
+                                                    href="https://www.luxembourg-city.com/en/what-s-on" target="_blank">
+                                                    www.luxembourg-city.com </a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-fr">
+                                    <div class="card-header d-flex justify-content-center" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button id="btnFr" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Major events in Lorraine
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordion">
+                                        <div id="frevents" class="card-body">
+                                            <details>
+                                                <summary>
+                                                    <b>European Artistic Crafts Days</b> in Metz: April
+                                                </summary>
+                                                <p>A major event for the promotion and development of the artistic
+                                                    crafts in France and
+                                                    Europe: workshops, training centres and schools open to the public,
+                                                    events,
+                                                    participation of many heritage and creative sites, themed tours and
+                                                    more… Come and
+                                                    discover the high quality of our local craftsmanship.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Mirabelle Plum Festival</b> in Metz: 15 August
+                                                </summary>
+                                                <p>The Mirabelle Plum Festival has attracted thousands of visitors to
+                                                    the capital of the
+                                                    Lorraine region every year since 1947, and rounds off Metz en Fête's
+                                                    programme of
+                                                    summer
+                                                    events. These celebrations usually take place after August 15 and
+                                                    come in the form
+                                                    of
+                                                    street entertainment, concerts, balls, a mirabelle plum market,
+                                                    crafts market,
+                                                    pyrotechnic display, parade and the election of Miss Mirabelle.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>The Montgolfiades</b> in Metz: from late August to early
+                                                    September
+                                                </summary>
+                                                <p>Over the years, the Montgolfiades de Metz has become one of the most
+                                                    popular aerostat
+                                                    events.
+                                                    This big gathering of aerostats, an unmissable event in late summer,
+                                                    is attended by
+                                                    over
+                                                    10 000 enthusiasts every year.
+                                                    The Metz balloon (launched on 21 August 2001) floats around the sky
+                                                    all over Europe
+                                                    and
+                                                    promotes the colours of the city of Metz, which was the birthplace
+                                                    of Pilâtre de
+                                                    Rozier,
+                                                    the world's first aerostat pilot.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Nancy International Film Festival</b> in Nancy: September
+                                                </summary>
+                                                <p>The festival, which is organised by a team of devoted volunteers, has
+                                                    taken place for
+                                                    over 20 years and today has an excellent reputation. It is one of
+                                                    the major events
+                                                    in
+                                                    September in Nancy.<br>
+                                                    Film directors from all around the world submit their films in the
+                                                    hope of being
+                                                    selected for the international short film competition or the
+                                                    documentary films
+                                                    competition. Films are selected based on the values of tolerance and
+                                                    multicultural
+                                                    dialogue. Sometimes militant, sometimes funny, unexpected or moving,
+                                                    the selected
+                                                    films
+                                                    always manage to surprise audiences. The festival is the opportunity
+                                                    to discover or
+                                                    rediscover films that are rarely shown in France. Young audiences
+                                                    aren’t neglected
+                                                    and
+                                                    can enjoy their own special programme. <br>In addition to its
+                                                    extremely diverse and
+                                                    high
+                                                    quality programme, the festival also
+                                                    features guest appearances and gatherings with attending actors and
+                                                    directors, or
+                                                    with
+                                                    the festival volunteers in the Manufacture courtyard where drinks
+                                                    parties, outdoor
+                                                    screenings and concerts and held.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>The Nancy Jazz Pulsation Fest</b> in Nancy: October
+                                                </summary>
+                                                <p>For ten or so days, it’s non-stop concerts throughout the Nancy area.
+                                                    There’s jazz of
+                                                    course, but not only! This festival is also tuned into all the major
+                                                    modern musical
+                                                    movements: blues, rock, chanson française, electro, reggae, hip-hop
+                                                    and world music.
+                                                    Both internationally famous headline acts and many new acts await
+                                                    you. <br>The
+                                                    festival
+                                                    promises you some exceptional evenings, as well as easy-going events
+                                                    such
+                                                    as Nancy Jazz Poursuite or Pépinière en fête (an afternoon of free
+                                                    concerts for all
+                                                    the
+                                                    family).</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Christmas Markets</b>: late November to late December 2019
+                                                </summary>
+                                                <p>Every town in the region has its own market, but the biggest are
+                                                    those in Metz,
+                                                    Nancy,
+                                                    Plombieres-les-Bains and Epinal. While
+                                                    the holiday season is approaching and the Christmas Market is in
+                                                    full swing at
+                                                    various
+                                                    sites and neighbourhoods of the city, it is traditional for the good
+                                                    Saint Nicholas
+                                                    to
+                                                    pay a visit in early December and reward good children with sweets
+                                                    and candies,
+                                                    while
+                                                    the Bogeyman figure of Père Fouettard takes care of the less
+                                                    well-behaved...
+                                                    Shops and businesses are generally open on the three Sundays before
+                                                    Christmas, so
+                                                    you
+                                                    can enjoy city breaks in the spice-scented air until the last few
+                                                    days before
+                                                    Christmas
+                                                    Day.
+                                                    A Ferris wheel, ice skating and other winter games offer a variety
+                                                    of entertainment
+                                                    for
+                                                    all ages.</p>
+                                            </details>
+                                            <br>
+                                            <p>You can find out more if you visit <a
+                                                    href="https://www.tourism-lorraine.com/see-do/events/"
+                                                    target="_blank">
+                                                    www.tourism-lorraine.com</a> and <a
+                                                    href="https://www.lorraineaucoeur.com/modules/compte/evenements.php"
+                                                    target="_blank">
+                                                    www.lorraineaucoeur.com </a>.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-blg">
+                                    <div class="card-header d-flex justify-content-center" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button id="btnBlg" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Major events in Wallonia
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <details>
+                                                <summary>
+                                                    <b>The Dour Festival</b>
+                                                </summary>
+                                                <p>For the first edition back in 1989, a mere five bands performed here,
+                                                    while today
+                                                    over a
+                                                    quarter of a million festival-goers arrive to listen to 200 bands
+                                                    performing at 6
+                                                    different stages. Not quite Glastonbury, but the same spirit, with
+                                                    acts like Mark
+                                                    Ronson, De La Soul, Snoop Dogg and Damon Albarn. It offers you an
+                                                    eclectic list of
+                                                    artists - stars, gems,
+                                                    up and rising musicians and singers, traditional ones. From rap to
+                                                    drum N bass,
+                                                    electro
+                                                    to reggae and hip-hop, there will be something for everyone.
+                                                </p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>"Les Fetes de Wallonie" (The Wallonia Festivals)</b> in Namur:
+                                                    September
+                                                </summary>
+                                                <p>‘Les Fetes de Wallonie’ (The Wallonia Festivals) celebrate Belgian
+                                                    independence,
+                                                    patriotism and Walloon identity, commemorating the famous
+                                                    revolutionary days of
+                                                    September 1830 when the country was officially formed. <br> Although
+                                                    marked across
+                                                    southern Belgium, the biggest celebrations are in Wallonia’s
+                                                    capital city, Namur, where as many as 250,000 people descend for the
+                                                    festivities
+                                                    every
+                                                    year.<br>
+                                                    Highlights include the ‘Combat de l’Echasse d’Or’, or the ‘Fight for
+                                                    the Golden
+                                                    Stilt’,
+                                                    on Place St. Aubain. During this ancient and near-sacred bout, two
+                                                    groups of
+                                                    stilt-wearing contestants stand in opposing lines, then move into
+                                                    battle to the
+                                                    sound of
+                                                    drums. The aim is to make their direct opponent fall using only
+                                                    their elbows or
+                                                    stilts,
+                                                    with the last man standing hailed the champion. Needless to say,
+                                                    strong beer
+                                                    follows.
+                                                </p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Christmas Markets</b> in Liège, Namur, Arlon and other towns:
+                                                    December
+                                                </summary>
+                                                <p>the Christmas market in Liège is the oldest and the biggest one in
+                                                    Belgium. And it’s
+                                                    not
+                                                    just a simple Christmas market, it’s a whole Christmas Village, with
+                                                    its very own
+                                                    Post
+                                                    Office and post stamps! This year there will be even a small train
+                                                    that will connect
+                                                    the
+                                                    various attractions in the Christmas Village. The traditional
+                                                    skating rink, the
+                                                    Ferris
+                                                    wheel and the toboggan run aren’t missing, as well. If you want to
+                                                    buy a unique
+                                                    souvenir, than you should look for the hand blown glass decorations.
+                                                    Of course, when
+                                                    in
+                                                    Liège, you have to try the famous Liège waffles, which are not to be
+                                                    mixed with the
+                                                    Brussels waffles. </p>
+                                            </details>
+                                            <br>
+                                            <p> To Find more visit <a
+                                                    href="http://walloniabelgiumtourism.co.uk/en-gb/3/see-do/events-calendar"
+                                                    target="_blank">
+                                                    www.walloniabelgiumtourism.co.uk</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-grm">
+                                    <div class="card-header d-flex justify-content-center" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button id="btnGrm" class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                Major events in Saarland and Rhineland-Palatinate
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <details>
+                                                <summary>
+                                                    <b>Brezelfest</b> in Speyer: from 11 to 16 July 2019
+                                                </summary>
+                                                <p>The biggest public festival on the upper Rhine is an absolute must
+                                                    for residents of
+                                                    Speyer and their guests. For six days, there is turmoil on the
+                                                    fairgrounds beneath the
+                                                    cathedral. Every Sunday at the pretzel party - at 1:30pm - a colored
+                                                    pageant waltzes
+                                                    through the streets of the cathedral city.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Saar Spectacle</b> in Saarbücken: from 2 to 4 August 2019
+                                                </summary>
+                                                <p>Sun, sand and ... Saar. Every year over 300,000 visitors come to
+                                                    Saarbrücken and are
+                                                    fascinated by the biggest water and water sports happening. The Saar
+                                                    Spectacle in
+                                                    Saarbrücken is a unique event that you won’t find anywhere else in
+                                                    Germany, revolving
+                                                    all around the river Saar, water and water sports.Each year, the
+                                                    programme features a
+                                                    varied programme including lots of live music plus
+                                                    different highlights, such as dragon boat and motorboat races, stand
+                                                    up paddle boarding
+                                                    and a flyboard show. </p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>International festival of Magic</b> in St. Wendel: from 2 to 4
+                                                    August 2019
+                                                </summary>
+                                                <p>Top street magicians from around the world each year gather in St.
+                                                    Wendel to find out
+                                                    who’s the best. The competition takes place in different locations
+                                                    in the town’s
+                                                    pedestrianised centre, with each participant putting on a 20-minutes
+                                                    show. The award
+                                                    ceremony is part of an open-air gala of magic on the castle square
+                                                    on Saturday night
+                                                    from 8 pm onwards. This is followed by a big family festival of
+                                                    magic on Sunday.</p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>The Wurstmarkt</b> in Bad Dürkheim: from 6 to 10 September 2019
+                                                </summary>
+                                                <p>It's one of the largest, most traditional and entertaining public
+                                                    festivals in Germany.
+                                                    It is over 570 years old, and still as young as ever - the Dürkheim
+                                                    festival of
+                                                    festivals - the main event of the year in the Pfalz.<br>
+                                                    The entertainment along with the wine is one of the distinctive
+                                                    features of the
+                                                    festival. You can enjoy over 150 different wines in over 50
+                                                    different places - from the
+                                                    mellow Riesling to the finest ice-wine.<br>
+                                                    Drinking without having to worry about alcohol limits - every
+                                                    driver's dream! No problem
+                                                    at the Dürkheimer Wurstmarkt. the greatest wine festival in the
+                                                    world is in the heart of
+                                                    the Pfalz and is easy to get to by bus or rail from any direction -
+                                                    right round the
+                                                    clock!
+                                                </p>
+                                            </details>
+                                            <details>
+                                                <summary>
+                                                    <b>Christmas Markets</b> in Saarbrücken, Speyer, Hauenstein :
+                                                    December
+                                                </summary>
+                                                <p>Throughout Advent the St. Johanner market square in Saarbrücken is
+                                                    decorated for the
+                                                    festive season. All
+                                                    sorts of seasonal items and festive events put visitors in a jolly
+                                                    mood. </p>
+                                            </details>
+                                            <br>
+                                            <p>Go to <a href="http://www.saarbruecken.de/en/tourism/event_highlights"
+                                                    target="_blank">
+                                                    www.saarbruecken.de</a>, <a
+                                                    href="https://www.visitsaarland.co.uk/travel-guide/Veranstaltungskalender2"
+                                                    target="_blank">
+                                                    www.visitsaarland.co.uk </a> and <a
+                                                    href="https://www.romantic-germany.info/holiday-regions/palatinate/event-highlights/#accordion"
+                                                    target="_blank">www.romantic-germany.info</a> for find the details
+                                                and more.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container" style="margin-top: 4rem;">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p class="text-muted">©2019 Ann Ignatenko</p>
+        </div>
+    </footer>
+
+    <script src='https://npmcdn.com/react@15.3.0/dist/react.min.js'></script>
+    <script src='https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js'></script>
+    <script src="js/calendar1.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <!-- <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
