@@ -1,0 +1,77 @@
+body{ 
+   overflow: auto; /* add scroll if necessary to fill all the area */
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+h2{
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    
+    }
+
+
+#map, #map1{
+    width: 17em;
+}
+
+.left{
+    float: left;
+
+    }
+
+    .left-pic{
+        float:left;
+    margin-right: 1.5em;
+    margin-top: 0.3em;
+    width:33%;
+    }
+
+/* .photo{
+    width: 20em;
+} */
+
+.carousel-inner{
+    height: auto; 
+
+}
+
+.center{
+margin-right: 1em;
+}
+
+
+
+#btnLux, #btnFr, #btnBlg, #btnGrm, #btnGR{
+    font-size: 1.5rem;
+} 
+
+.card-lux{
+  background-color: #ebeef5;
+  
+}
+
+.card-fr{
+background-color: #f5eef2;
+}
+
+.card-blg{
+background-color: #f5f2ec;
+}
+
+.card-grm{
+background-color: #f5f7ee;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #184d52;
+}
+
+p{
+    text-align: justify;
+}

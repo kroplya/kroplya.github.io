@@ -1,0 +1,599 @@
+<!DOCTYPE html> <!-- template for BOOTSTRAP 4 from www.getbootstrap.com-->
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Greater Region</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- for fixing navbar top fixed overlapping -->
+    <script>
+        $(document).ready(function () {
+            $(document.body).css('padding-top', $('#topnavbar').height() + 10);
+            $(window).resize(function () {
+                $(document.body).css('padding-top', $('#topnavbar').height() + 10);
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="sticky-footer-navbar.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/grandeRegionWel.css">
+
+</head>
+
+<body class="d-flex flex-column h-100"> <!--h-100 for sticky footer-->
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="topnavbar" style="background-color: #335557">
+            <!--id=topnavbar for fixing navbar top fixed overlapping -->
+            <div class="navbar-brand mb-0 h1" style="color: #2cc446; font-variant: small-caps">
+                <!-- for a link <a> class="navbar-brand" href="#"></a>-->
+                <div class="d-inline-block align-top">Grande Region</div>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            Welcome <span class="sr-only">(current)</span>
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="events.html">Events </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hiking.html">Hiking</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="flex-shrink-0">
+
+        <div class="container-fluid d-md-none">
+            <div id="accordion" class="shadow p-0 mb-5 bg-white rounded d-print-none" style="width:100%;">
+                <div class="card card-gr">
+                    <div class="card-header d-flex justify-content-center" id="headingOne">
+                        <h2 class="mb-0">
+                            <button id="btnGR" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Grande Region
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <img id="map" class="image-fluid"
+                                src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Saar_Lor_Lux_III.gif"
+                                alt="Map of the Grande Region" style="align-content: center;">
+                            <p>The Greater Region lies at the crossroads of the rivers Rhine, Saar, Meuse and Moselle.
+                                It
+                                covers 65.401 km2 with more than 11.6 million inhabitants from the territories Lorraine
+                                in
+                                the French region Grand Est, Wallonia, the Federation Wallonia-Brussels and Ostbelgien
+                                in
+                                Belgium, Saarland and Rhineland-Palatinate in Germany as well as the Grand Duchy of
+                                Luxembourg.<br><br>The concept of the Greater Region has its origins in the
+                                intergovernmental
+                                commission set up
+                                by Germany and France in 1969. Two years later, the Grand Duchy of Luxembourg joined the
+                                commission, followed by the German federal states Saarland and Rhineland-Palatinate, the
+                                French region Lorraine as well as the Federation Wallonia-Brussels and the
+                                German-speaking
+                                Community of Belgium. <br>
+                                Throughout history, the territories of the Greater Region have been shaped by numerous
+                                cultures and traditions, languages, and industries. <br> <br>The four countries and five
+                                regions offer a wide range of cultural activities, cuisine, and sightseeing for tourists
+                                and
+                                locals alike. Visitors can enjoy their journey while discovering new places: Cultural
+                                diversity, a common industrial and natural
+                                heritage as well as a great number of UNESCO world heritage sites leave nothing to be
+                                desired. The outstanding cultural programme includes theatre, music, dance, and artistic
+                                performances. The <a href="http://interreg-iv.tourismus-grossregion.eu/fr"
+                                    target="_blank">Tourism
+                                    Marketing of the Greater Region</a> helps travellers to find the
+                                best spots in the area and provides <a
+                                    href="http://interreg-iv.tourismus-grossregion.eu/fr/Guides-touristiques-de-la-Grande-Region"
+                                    target="_blank">multilingual tour guides</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-lux">
+                    <div class="card-header d-flex justify-content-center" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button id="btnLux" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Luxembourg
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div id="frevents" class="card-body">
+                            <p>Luxembourg,
+                                officially the Grand Duchy of Luxembourg, is a small landlocked country in
+                                western Europe. It is bordered by Belgium to the west and north, Germany to the east,
+                                and France to the south. Its capital, Luxembourg City, is one of the three official
+                                capitals of the European Union (together with Brussels and Strasbourg) and the seat
+                                of the European Court of Justice, the highest judicial authority in the EU. <br><br>Its
+                                culture,
+                                people, and languages are highly intertwined with its neighbours, making it essentially
+                                a mixture of French and German cultures, as evident by the nation's three official
+                                languages: French, German, and the national language, Luxembourgish. The repeated
+                                invasions by Germany, especially in World War II, resulted in the country's strong will
+                                for mediation between France and Germany and, among other things, led to the foundation
+                                of the European Union. <br><br>
+                                Luxembourg has been overshadowed by the culture of its neighbours. It retains a number
+                                of folk traditions, having been for much of its history a profoundly rural country.
+                                There are several notable museums, located mostly in the capital. These include the
+                                National Museum of History and Art (NMHA), the Luxembourg City History Museum, and the
+                                new Grand Duke Jean Museum of Modern Art (Mudam). The National Museum of Military
+                                History (MNHM) in Diekirch is especially known for its representations of the Battle of
+                                the Bulge. The city of Luxembourg itself is on the UNESCO World Heritage List, on
+                                account of the historical importance of its fortifications.<br><br>
+
+                                The country has produced some internationally known artists, including the painters Théo
+                                Kerg, Joseph Kutter and Michel Majerus, and photographer Edward Steichen, whose The
+                                Family of Man exhibition has been placed on UNESCO's Memory of the World register, and
+                                is now permanently housed in Clervaux. Movie star Loretta Young was of Luxembourgish
+                                descent. <br>Luxembourg was the first city to be named European Capital of Culture
+                                twice.<br><br>
+                                Luxembourg cuisine reflects its position on the border between the Latin and Germanic
+                                worlds, being heavily influenced by the cuisines of neighboring France and Germany. More
+                                recently, it has been enriched by its many Italian and Portuguese immigrants.
+
+                                Most native Luxembourg dishes, consumed as the traditional daily fare, share roots in
+                                the country's folk dishes the same as in neighboring Germany.<br><br>
+                                Luxembourg sells the most alcohol in Europe per capita.However, the large
+                                proportion of alcohol purchased by customers from neighboring countries contributes to
+                                the statistically high level of alcohol sales per capita; this level of alcohol sales is
+                                thus not representative of the actual alcohol consumption of the Luxembourg
+                                population.<br><br>
+                                Source: ©Wikipedia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-fr">
+                    <div class="card-header d-flex justify-content-center" id="headingThree">
+                        <h2 class="mb-0">
+                            <button id="btnFr" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Lorraine region, France
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                Lorraine is
+                                a cultural and historical region in north-eastern France, now located in the
+                                administrative region of Grand Est. Lorraine's name stems from the medieval kingdom of
+                                Lotharingia, which in turn was named for either Emperor Lothair I or King Lothair II. It
+                                later was ruled as the Duchy of Lorraine before the Kingdom of France annexed it in
+                                1766.<br><br>
+                                Traditional dishes in the region include: Quiche Lorraine,
+                                Pâté lorrain (chopped pork and veal flavoured with white wine and baked in puff pastry)
+                                Potée lorraine (a stew of smoked meats and sausages, with cabbage, potatoes and other
+                                root vegetables), Andouille (tripe sausage). Traditional cheeses of Lorraine include the
+                                following: Carré de l'Est, Brouère,
+                                Munster-géromé, Tourrée de l'Aubier. Desserts include: Madeleine, Macaron, Rum baba,
+                                Plombières ice-cream, various pie
+                                recipes (brimbelles bilberry, mirabelle plum, rhubarb, quark...).<br><br>
+                                Source: ©Wikipedia.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-blg">
+                    <div class="card-header d-flex justify-content-center" id="headingFour">
+                        <h2 class="mb-0">
+                            <button id="btnBlg" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                Wallonia region, Belgium
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                Wallonia
+                                is a region of Belgium. As the southern portion of the country, Wallonia is primarily
+                                French-speaking, and accounts for 55% of Belgium's territory and a third of its
+                                population.<br><br>
+                                The capital of Wallonia is Namur, and the most populous city is Charleroi. Most of
+                                Wallonia's major cities and two-thirds of its population lie along the Sambre and Meuse
+                                valley, the former industrial backbone of Belgium. To the north lies the Central Belgian
+                                Plateau, which, like Flanders, is relatively flat and agriculturally fertile. In the
+                                southeast lie the Ardennes, hilly and sparsely populated.<br><br>
+                                    Something interesting about festivals. The Ducasse de Mons (Walloon French for
+                                    Kermesse), is one of the UNESCO Masterpieces of the Oral and Intangible Heritage of
+                                    Humanity. It comprises two important parts: the procession, the descent and the
+                                    ascent of the shrine of Waltrude, and the combat between Saint George and the
+                                    dragon. The combat (after the procession), plays out on the Trinity Sunday between
+                                    12:30 pm and 1:00 pm on the Mons's central square. It represents the fight between
+                                    Saint George (the good) and the dragon (the evil). The dragon is a mannequin carried
+                                    and moved by the white men (fr:Hommes blancs). The dragon fights Saint George by
+                                    attacking with his tail. Saint George on his horse turns clockwise and the dragon
+                                    turns in the other direction. Saint George finally kills the dragon.
+
+                                    The Gilles of Binche and the giants' procession in Ath are also UNESCO Masterpieces
+                                    of the Oral and Intangible Heritage of Humanity.<br><br>
+                                    Wallonia is famous for a number of different foods and drinks, a great many of which
+                                    are specialties of certain cities or regions. The 1957 Michelin Guide noted that
+                                    "regional food has put up heroic resistance and the Walloon provinces and Flemish
+                                    provinces are proud of their specialities." The Liège waffle a rich, dense,
+                                    sweet, and chewy waffle native to Liège, is the most popular type of waffle in
+                                    Belgium, and can be found in stores and even vending machines throughout the
+                                    country. Cougnou, or the bread of Jesus, is a sweet bread typically eaten around
+                                    Christmas time and found throughout the region.<br><br>
+
+                                    Other specialties include Herve cheese, an apple butter called sirop de Liège, the
+                                    Garden strawberry of Wépion. Also notable is the Dinant specialty Flamiche: These
+                                    cheese tarts are not found in window displays as they are meant to be eaten straight
+                                    from the oven. As one restaurateur said so well in a book about Walloon gastronomy
+                                    "it is the client who waits for the flamiche, as the flamiche does not wait for the
+                                    client. There are also the Ardennes ham, the tarte al djote from Nivelles, a
+                                    dessert pie made with beet leaves and cheese,[54] while tarte au riz is a
+                                    rice-pudding filled pie from Verviers.<br><br>
+
+                                    In terms of drink, Wallonia mirrors Belgium as a whole; beer and wine are both
+                                    popular, and a great diversity of beers are made and enjoyed in Wallonia.<br><br>
+                                    Source: ©Wikipedia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-grm">
+                    <div class="card-header d-flex justify-content-center" id="headingFive">
+                        <h2 class="mb-0">
+                            <button id="btnGrm" class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Saarland and Rhineland-Palatinate regions, Germany
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                Saarland is located in western Germany covering an area of 2,570 km2 (990 sq mi) and a
+                                population of 995,600 (2015), the smallest German state in both area and population
+                                apart from the city-states of Berlin, Bremen, and Hamburg.Saarbrücken is the state
+                                capital and largest city, while other major cities include Neunkirchen and Saarlouis.
+                                Saarland is surrounded by France to the west (apart from a few kms. of the Moselle river
+                                bordering Luxembourg) and south and the German state of Rhineland-Palatinate to the
+                                north and east.<br><br>
+                                Live music is a feature of Saarland, especially at open-air concerts and in atmospheric
+                                locations. Examples include the Antattack Festival at the Dillinger Lokschuppen venue,
+                                the rock festival at the Hüttenpark former industrial site in Neunkirchen, and the
+                                RockCamp Festival at the open-air swimming pool in Saarwellingen. Even the Saarbrücken
+                                university campus likes it loud – at the AStA Open Air Festival. But for the season's
+                                really big event you have to go up into Püttlingen forest: Rocco del Schlacko. The event
+                                started out in 1999 as a mini festival that attracted 600 people and five local bands,
+                                but now attracts 20,000 fans who make the earth tremble at the Sauwasen site where it's
+                                held. The flamboyantly named open-air festival, which is held in a typical Saarland
+                                natural setting, has developed into a regular feature of the German summer festival
+                                season.<br><br>
+                                Rhineland-Palatinate is located in western Germany covering an area of 19,846 km2 (7,663
+                                sq mi) and a population of 4.05 million inhabitants, the seventh-most populous German
+                                state. Mainz is the state capital and largest city, while other major cities include
+                                Ludwigshafen am Rhein, Koblenz, Trier, Kaiserslautern, and Worms.<br><br>
+                                With 42% of its area covered by forests, it is the most forested state along with
+                                Hesse. The state's major rivers are the Rhine, including the UNESCO World Heritage
+                                Site Middle Rhine, and the Moselle. Several crater lakes of volcanic origin are in the
+                                Eifel, the biggest of which is the Laacher See.<br><br>
+                                Source: ©Wikipedia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-2 d-none d-md-block d-print-none left">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-GR-tab" data-toggle="pill" href="#v-pills-GR" role="tab"
+                            aria-controls="v-pills-GR" aria-selected="true">Grande Region</a>
+                        <a class="nav-link" id="v-pills-Lux-tab" data-toggle="pill" href="#v-pills-Lux" role="tab"
+                            aria-controls="v-pills-Lux" aria-selected="false">Luxembourg</a>
+                        <a class="nav-link" id="v-pills-Fr-tab" data-toggle="pill" href="#v-pills-Fr" role="tab"
+                            aria-controls="v-pills-Fr" aria-selected="false">Lorraine</a>
+                        <a class="nav-link" id="v-pills-Blg-tab" data-toggle="pill" href="#v-pills-Blg" role="tab"
+                            aria-controls="v-pills-Blg" aria-selected="false">Wallonia</a>
+                        <a class="nav-link" id="v-pills-Grm-tab" data-toggle="pill" href="#v-pills-Grm" role="tab"
+                            aria-controls="v-pills-Grm" aria-selected="false">Saarland and <br>Rhineland-Palatinate</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-10 d-none d-md-block d-print-inline right" style="padding-right:20px;">
+                    <div class="tab-content" id="v-pills-tabContent" style="width: 95%; float: right;">
+                        <div class="tab-pane fade show active" id="v-pills-GR" role="tabpanel"
+                            aria-labelledby="v-pills-GR-tab">
+                            
+                                <h2>Exploring the <strong>Heart of Europe</strong></h2>
+                                <div class="left-pic">
+                                    <img id="map1"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Saar_Lor_Lux_III.gif"
+                                        alt="Map of the Grande Region" class="img-fluid">
+                                </div>
+                                <aside class="center">
+                                    <p>The Greater Region lies at the crossroads of the rivers Rhine, Saar, Meuse and
+                                        Moselle. It
+                                        covers 65.401 km2 with more than 11.6 million inhabitants from the territories
+                                        Lorraine in
+                                        the French region Grand Est, Wallonia, the Federation Wallonia-Brussels and
+                                        Ostbelgien in
+                                        Belgium, Saarland and Rhineland-Palatinate in Germany as well as the Grand Duchy
+                                        of
+                                        Luxembourg.<br> <br>
+                                        The concept of the Greater Region has its origins in the intergovernmental
+                                        commission set up
+                                        by Germany and France in 1969. Two years later, the Grand Duchy of Luxembourg
+                                        joined
+                                        the
+                                        commission, followed by the German federal states Saarland and
+                                        Rhineland-Palatinate,
+                                        the
+                                        French region Lorraine as well as the Federation Wallonia-Brussels and the
+                                        German-speaking
+                                        Community of Belgium. <br>
+                                        Throughout history, the territories of the Greater Region have been shaped by
+                                        numerous
+                                        cultures and traditions, languages, and industries. <br> <br>The four countries
+                                        and
+                                        five
+                                        regions offer a wide range of cultural activities, cuisine, and sightseeing for
+                                        tourists and
+                                        locals alike. Visitors can enjoy their journey while discovering new places:
+                                        Cultural
+                                        diversity, a common industrial and natural
+                                        heritage as well as a great number of UNESCO world heritage sites leave nothing
+                                        to
+                                        be
+                                        desired. The outstanding cultural programme includes theatre, music, dance, and
+                                        artistic
+                                        performances. The <a href="http://interreg-iv.tourismus-grossregion.eu/fr"
+                                            target="_blank">Tourism Marketing of the Greater Region</a> helps travellers
+                                        to
+                                        find the
+                                        best spots in the area and provides <a
+                                            href="http://interreg-iv.tourismus-grossregion.eu/fr/Guides-touristiques-de-la-Grande-Region"
+                                            target="_blank">multilingual tour guides</a>.
+                                    </p>
+                                    <p>Info from <a href="http://www.granderegion.net/en"
+                                            target="_blank">www.granderegion.net</a>.
+                                    </p>
+                                </aside>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-Lux" role="tabpanel" aria-labelledby="v-pills-Lux-tab">
+                            
+                                    <div class="d-none d-md-block">
+                                        <h2>Grand Duchy of Luxembourg</h2>
+                                        <div class="left-pic">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2jx1Wv1ZoMLak3_zJiPxZGHLFqrMCDHVUJlRNVsn-WWv-juQr"
+                                                class="photo img-fluid" alt="Photo of Luxembourg ©Wikipedia">
+                                        </div>
+                                        <aside class="center">
+                                        <p class="lead">Luxembourg,
+                                                officially the Grand Duchy of Luxembourg, is a small landlocked country in
+                                                western Europe. It is bordered by Belgium to the west and north, Germany to the east,
+                                                and France to the south. Its capital, Luxembourg City, is one of the three official
+                                                capitals of the European Union (together with Brussels and Strasbourg) and the seat
+                                                of the European Court of Justice, the highest judicial authority in the EU. <br><br>Its
+                                                culture,
+                                                people, and languages are highly intertwined with its neighbours, making it essentially
+                                                a mixture of French and German cultures, as evident by the nation's three official
+                                                languages: French, German, and the national language, Luxembourgish. The repeated
+                                                invasions by Germany, especially in World War II, resulted in the country's strong will
+                                                for mediation between France and Germany and, among other things, led to the foundation
+                                                of the European Union. <br><br>
+                                                Luxembourg has been overshadowed by the culture of its neighbours. It retains a number
+                                                of folk traditions, having been for much of its history a profoundly rural country.
+                                                There are several notable museums, located mostly in the capital. These include the
+                                                National Museum of History and Art (NMHA), the Luxembourg City History Museum, and the
+                                                new Grand Duke Jean Museum of Modern Art (Mudam). The National Museum of Military
+                                                History (MNHM) in Diekirch is especially known for its representations of the Battle of
+                                                the Bulge. The city of Luxembourg itself is on the UNESCO World Heritage List, on
+                                                account of the historical importance of its fortifications.<br><br>
+                
+                                                The country has produced some internationally known artists, including the painters Théo
+                                                Kerg, Joseph Kutter and Michel Majerus, and photographer Edward Steichen, whose The
+                                                Family of Man exhibition has been placed on UNESCO's Memory of the World register, and
+                                                is now permanently housed in Clervaux. Movie star Loretta Young was of Luxembourgish
+                                                descent. <br>Luxembourg was the first city to be named European Capital of Culture
+                                                twice.<br><br>
+                                                Luxembourg cuisine reflects its position on the border between the Latin and Germanic
+                                                worlds, being heavily influenced by the cuisines of neighboring France and Germany. More
+                                                recently, it has been enriched by its many Italian and Portuguese immigrants.
+                
+                                                Most native Luxembourg dishes, consumed as the traditional daily fare, share roots in
+                                                the country's folk dishes the same as in neighboring Germany.<br><br>
+                                                Luxembourg sells the most alcohol in Europe per capita.However, the large
+                                                proportion of alcohol purchased by customers from neighboring countries contributes to
+                                                the statistically high level of alcohol sales per capita; this level of alcohol sales is
+                                                thus not representative of the actual alcohol consumption of the Luxembourg
+                                                population.<br><br>
+                                                Source: ©Wikipedia.</p>
+                                            </aside>
+                             
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-Fr" role="tabpanel" aria-labelledby="v-pills-Fr-tab">
+                            
+                                    <div class="d-none d-md-block">
+                                        <h2>Lorraine <span class="text-muted"> France</span></h2>
+                                        <div class="left-pic">
+                                            <img src="https://www.dhcnews.co.uk/wp-content/uploads/2015/11/Metz-heatingnetwork-dhcnews.jpg"
+                                                class="photo img-fluid"
+                                                alt="Photo of Lorraine region, France ©https://www.dhcnews.co.uk">
+                                        </div>
+                                        <aside class="center">
+                                        <p class="lead"> Lorraine is
+                                                a cultural and historical region in north-eastern France, now located in the
+                                                administrative region of Grand Est. Lorraine's name stems from the medieval kingdom of
+                                                Lotharingia, which in turn was named for either Emperor Lothair I or King Lothair II. It
+                                                later was ruled as the Duchy of Lorraine before the Kingdom of France annexed it in
+                                                1766.<br><br>
+                                                Traditional dishes in the region include: Quiche Lorraine,
+                                                Pâté lorrain (chopped pork and veal flavoured with white wine and baked in puff pastry)
+                                                Potée lorraine (a stew of smoked meats and sausages, with cabbage, potatoes and other
+                                                root vegetables), Andouille (tripe sausage). Traditional cheeses of Lorraine include the
+                                                following: Carré de l'Est, Brouère,
+                                                Munster-géromé, Tourrée de l'Aubier. Desserts include: Madeleine, Macaron, Rum baba,
+                                                Plombières ice-cream, various pie
+                                                recipes (brimbelles bilberry, mirabelle plum, rhubarb, quark...).<br><br>
+                                                Source: ©Wikipedia.</p>
+                                            </aside>
+                                 
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-Blg" role="tabpanel" aria-labelledby="v-pills-Blg-tab">
+                            
+                                    <div class="d-none d-md-block">
+                                        <h2>Wallonia <span class="text-muted"> Belgium</span>
+                                        </h2>
+                                        <div class="left-pic">
+                                            <img src="https://i.ytimg.com/vi/DLykReboJD0/maxresdefault.jpg"
+                                                class="photo img-fluid" alt="Photo of Wallonie region, Belgium ©....">
+                                        </div>
+                                        <aside class="center">
+                                        <p class="lead">
+                                            Wallonia
+                                                is a region of Belgium. As the southern portion of the country, Wallonia is primarily
+                                                French-speaking, and accounts for 55% of Belgium's territory and a third of its
+                                                population.<br><br>
+                                                The capital of Wallonia is Namur, and the most populous city is Charleroi. Most of
+                                                Wallonia's major cities and two-thirds of its population lie along the Sambre and Meuse
+                                                valley, the former industrial backbone of Belgium. To the north lies the Central Belgian
+                                                Plateau, which, like Flanders, is relatively flat and agriculturally fertile. In the
+                                                southeast lie the Ardennes, hilly and sparsely populated.<br><br>
+                                                    Something interesting about festivals. The Ducasse de Mons (Walloon French for
+                                                    Kermesse), is one of the UNESCO Masterpieces of the Oral and Intangible Heritage of
+                                                    Humanity. It comprises two important parts: the procession, the descent and the
+                                                    ascent of the shrine of Waltrude, and the combat between Saint George and the
+                                                    dragon. The combat (after the procession), plays out on the Trinity Sunday between
+                                                    12:30 pm and 1:00 pm on the Mons's central square. It represents the fight between
+                                                    Saint George (the good) and the dragon (the evil). The dragon is a mannequin carried
+                                                    and moved by the white men (fr:Hommes blancs). The dragon fights Saint George by
+                                                    attacking with his tail. Saint George on his horse turns clockwise and the dragon
+                                                    turns in the other direction. Saint George finally kills the dragon.
+                
+                                                    The Gilles of Binche and the giants' procession in Ath are also UNESCO Masterpieces
+                                                    of the Oral and Intangible Heritage of Humanity.<br><br>
+                                                    Wallonia is famous for a number of different foods and drinks, a great many of which
+                                                    are specialties of certain cities or regions. The 1957 Michelin Guide noted that
+                                                    "regional food has put up heroic resistance and the Walloon provinces and Flemish
+                                                    provinces are proud of their specialities." The Liège waffle a rich, dense,
+                                                    sweet, and chewy waffle native to Liège, is the most popular type of waffle in
+                                                    Belgium, and can be found in stores and even vending machines throughout the
+                                                    country. Cougnou, or the bread of Jesus, is a sweet bread typically eaten around
+                                                    Christmas time and found throughout the region.<br><br>
+                
+                                                    Other specialties include Herve cheese, an apple butter called sirop de Liège, the
+                                                    Garden strawberry of Wépion. Also notable is the Dinant specialty Flamiche: These
+                                                    cheese tarts are not found in window displays as they are meant to be eaten straight
+                                                    from the oven. As one restaurateur said so well in a book about Walloon gastronomy
+                                                    "it is the client who waits for the flamiche, as the flamiche does not wait for the
+                                                    client. There are also the Ardennes ham, the tarte al djote from Nivelles, a
+                                                    dessert pie made with beet leaves and cheese,[54] while tarte au riz is a
+                                                    rice-pudding filled pie from Verviers.<br><br>
+                
+                                                    In terms of drink, Wallonia mirrors Belgium as a whole; beer and wine are both
+                                                    popular, and a great diversity of beers are made and enjoyed in Wallonia.<br><br>
+                                                    Source: ©Wikipedia.</p>
+                                                </aside>
+                                    
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-Grm" role="tabpanel" aria-labelledby="v-pills-Grm-tab">
+                            
+                                    <div class="d-none d-md-block">
+                                        <h2>Saarland and Rhineland-Palatinate <span
+                                                class="text-muted"> Germany</span></h2>
+                                        <div class="left-pic">
+                                            <img src="https://www.votpusk.ru/country/ctimages/new/DE93.jpg"
+                                                class="photo img-fluid" alt="Photo of Saarland region, Germany ©www.votpusk.ru">
+                                        </div>
+                                        <aside class="center">
+                                        <p class="lead">Saarland is located in western Germany covering an area of 2,570 km2 (990 sq mi) and a
+                                                population of 995,600 (2015), the smallest German state in both area and population
+                                                apart from the city-states of Berlin, Bremen, and Hamburg.Saarbrücken is the state
+                                                capital and largest city, while other major cities include Neunkirchen and Saarlouis.
+                                                Saarland is surrounded by France to the west (apart from a few kms. of the Moselle river
+                                                bordering Luxembourg) and south and the German state of Rhineland-Palatinate to the
+                                                north and east.<br><br>
+                                                Live music is a feature of Saarland, especially at open-air concerts and in atmospheric
+                                                locations. Examples include the Antattack Festival at the Dillinger Lokschuppen venue,
+                                                the rock festival at the Hüttenpark former industrial site in Neunkirchen, and the
+                                                RockCamp Festival at the open-air swimming pool in Saarwellingen. Even the Saarbrücken
+                                                university campus likes it loud – at the AStA Open Air Festival. But for the season's
+                                                really big event you have to go up into Püttlingen forest: Rocco del Schlacko. The event
+                                                started out in 1999 as a mini festival that attracted 600 people and five local bands,
+                                                but now attracts 20,000 fans who make the earth tremble at the Sauwasen site where it's
+                                                held. The flamboyantly named open-air festival, which is held in a typical Saarland
+                                                natural setting, has developed into a regular feature of the German summer festival
+                                                season.<br><br>
+                                                Rhineland-Palatinate is located in western Germany covering an area of 19,846 km2 (7,663
+                                                sq mi) and a population of 4.05 million inhabitants, the seventh-most populous German
+                                                state. Mainz is the state capital and largest city, while other major cities include
+                                                Ludwigshafen am Rhein, Koblenz, Trier, Kaiserslautern, and Worms.<br><br>
+                                                With 42% of its area covered by forests, it is the most forested state along with
+                                                Hesse. The state's major rivers are the Rhine, including the UNESCO World Heritage
+                                                Site Middle Rhine, and the Moselle. Several crater lakes of volcanic origin are in the
+                                                Eifel, the biggest of which is the Laacher See.<br><br>
+                                                Source: ©Wikipedia.</p>
+                                            </aside>
+                                   
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p class="text-muted">©2019 Ann Ignatenko</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
