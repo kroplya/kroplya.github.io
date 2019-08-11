@@ -113,6 +113,7 @@ body{
 
 .calendar{
   position: sticky;
+  position: -webkit-sticky;
   top: 4em;
   margin-bottom: -85em;
   padding-top: 0em;
