@@ -74,9 +74,22 @@
                         <a class="nav-link" href="hiking.html">Hiking <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               <script type="text/javascript">
+                    var domainroot = "https://kroplya.github.io"
+
+                    function Gsitesearch(curobj) {
+                        curobj.q.value = "site:" + domainroot + " " + curobj.qfront.value
+                    }
+
+                </script>
+                <form class="form-inline mt-2 mt-md-0" action="http://www.google.com/search" method="get"
+                    onSubmit="Gsitesearch(this)">
+
+                    <input name="q" type="hidden" />
+                    <input name="qfront" class="form-control mr-sm-2" type="text" placeholder="Search"
+                        aria-label="Search" /> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                        value="Search">Search</button>
+
                 </form>
             </div>
         </nav>
