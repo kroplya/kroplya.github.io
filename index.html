@@ -53,49 +53,21 @@
                         <a class="nav-link" href="hiking.html">Hiking</a>
                     </li>
                 </ul>
-                
-                <form class="form-inline mt-2 mt-md-0"> 
-                    <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
-                
-                 <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
-
-                    <p>
-                    <input  id="hiddenquery" type="hidden" name="q" />
-                    <input name="qfront" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/> <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search" >Search</button> <br />
-                    
-                    
                     <script type="text/javascript">
-                    
-                    //Enter domain of site to search.
-                    var domainroot="https://kroplya.github.io"
-                    
-                    var searchaction=[ //form action for the 3 search engines
-                    "http://www.google.com/search",
-                    ]
-                    
-                    var queryfieldname=["q"] //name of hidden query form for the 3 search engines
-                    
-                    function switchaction(cur, index){
-                    cur.form.action=searchaction[index]
-                    document.getElementById("hiddenquery").name=queryfieldname[index]
-                    }
-                    
-                    function jksitesearch(curobj){
-                    for (i=0; i< document.jksearch.se.length; i++){ //loop through radio to see which is checked
-                    if (document.jksearch.se[i].checked==true)
-                    switchaction(document.jksearch.se[i], i)
-                    }
-                    document.getElementById("hiddenquery").value="site:"+domainroot+" "+curobj.qfront.value
-                    }
-                    
-                    
-                    </script>
-                    
-                    </p>
-                    
-                    </form>
-                
-              
+
+                            var domainroot="https://kroplya.github.io"
+                            
+                            function Gsitesearch(curobj){
+                            curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+                            }
+                            
+                            </script>
+                            <form class="form-inline mt-2 mt-md-0" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+                            
+                            <input name="q" type="hidden" />
+                            <input name="qfront" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" /> <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search" >Search</button> 
+                            
+                            </form>
                  <!--<form class="form-inline mt-2 mt-md-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> 
