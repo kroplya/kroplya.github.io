@@ -54,30 +54,25 @@
                     </li>
                 </ul>
                 
-                <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
+                <form class="form-inline mt-2 mt-md-0"> 
+                
+                 <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
 
                     <p>
-                    <input id="hiddenquery" type="hidden" name="q" />
-                    <input name="qfront" type="text" style="width: 200px" value="navigator object" /> <input type="submit" value="Search" /><br />
-                    <div style="font: bold 11px Verdana;">Google:<input name="se" type="radio" checked>  Yahoo:<input name="se" type="radio">  MSN:<input name="se" type="radio">
-                    </div>
+                    <input  id="hiddenquery" type="hidden" name="q" />
+                    <input name="qfront" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/> <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search" >Search</button> <br />
+                    
                     
                     <script type="text/javascript">
-                    
-                    // All-in-one Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
-                    // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
-                    // This notice must stay intact for use
                     
                     //Enter domain of site to search.
                     var domainroot="https://kroplya.github.io"
                     
                     var searchaction=[ //form action for the 3 search engines
                     "http://www.google.com/search",
-                    "http://search.yahoo.com/search",
-                    "http://search.msn.com/results.aspx"
                     ]
                     
-                    var queryfieldname=["q","p","q"] //name of hidden query form for the 3 search engines
+                    var queryfieldname=["q"] //name of hidden query form for the 3 search engines
                     
                     function switchaction(cur, index){
                     cur.form.action=searchaction[index]
@@ -99,9 +94,7 @@
                     
                     </form>
                 
-                
-               <!--  <div><script async src="https://cse.google.com/cse.js?cx=009851424572254299239:tki8uwh3tkk"></script>
-                    <div class="gcse-search"></div></div>
+              
                  <form class="form-inline mt-2 mt-md-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> 
